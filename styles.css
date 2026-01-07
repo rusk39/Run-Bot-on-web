@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(/WebAssets/discord-loginBG.svg);
+    background-color: #f0f0f0;
+    color: #000; /* 黒い文字色 */
+}
+
+.entrance {
+    text-align: center;
+    background-color: #393A41;;
+    max-height: 810px;
+    width: 480px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* 青色 */
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: #007bff; /* 青色 */
+    
+
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* 濃い青色 */
+}
+
+.modal {
+    display: none;
+    position: relative;
+    top: -60px;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #393A41;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* closeクラスに適用する表示形式 */
+.close {
+    color: #bbb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* closeクラスにカーソルを重ねた時の表示形式 */
+.close:hover {
+    color: #888;
+}
+
+.textbox {
+    align-items: center;
+    font-size: 16px;
+    color: #ccc;
+    height: 24px;
+    background-color: #35353C;
+    border:1px solid #888;
+    border-radius: 8px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Discord bot</title>
+</head>
+<style>
+    body , html {
+        background: #393A41;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-image: url(WebAssets/discord-loginBG.svg);
+        color: #aaa; /* 黒い文字色 */
+    }
+
+    .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .overlay {
+        position: absolute;
+        background: #393A41;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    authbutton {
+        align-self: center;
+    }
+</style>
+<body>
+    <div class="entrance">
+        <h1 id="Name">bot Activation Tool</h1>
+        <button id="authButton">Authorize</button>
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <div><span class="close">&times;</span></div>
+                <div>Client ID</div>
+                <input type="email" id="idBox" class="textbox">
+                <div>Token</div>
+                <input type="password" id="tokenbox" class="textbox">
+                <div><button id="submitButton">Submit</button></div>
+            </div>
+        </div>
+        <div id="DeveloperNotice">This tool made for personal use.</div>
+    </div>    
+
+
+
+    <script src="BotActivateTool.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function showpopup(str) {
+                alert(str);
+            }
+        });
+    </script>
+</body>
+</html>
