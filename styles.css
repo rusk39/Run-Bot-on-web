@@ -1,27 +1,22 @@
-html {
-    font-size: 0.5vh;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(/WebAssets/discord-loginBG.svg);
-    background-color: #f0f0f0;
     color: #000; /* 黒い文字色 */
 }
 
 .entrance {
+    display:table-row;
+    flex-direction: row;
     text-align: center;
-    align-items: center;
-    align-content: space-between;
     background-color: #393A41;;
     min-height: 50vh;
     max-height: 90vh;
-    height: 810px;
+    height: fit-content;
     min-width: 40vh;
     max-width: 90vh;
     width: 480px;
@@ -30,13 +25,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-DeveloperNotice {
-    position: relative;
-    bottom: 12px
-}
-
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 20px;
     color: #007bff; /* 青色 */
     position: relative;
@@ -48,10 +38,7 @@ button {
     font-size: 2em;
     border: none;
     border-radius: 5px;
-
     background-color: #007bff; /* 青色 */
-    
-
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -65,8 +52,8 @@ button:hover {
     display: none;
     align-self: center;
     position: absolute;
-    left: 50vh
-    width: 100%;
+    left: 50vh;
+    width: 70%;
     overflow: auto;
     z-index: 1;
 }
