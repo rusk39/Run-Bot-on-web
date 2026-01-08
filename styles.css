@@ -13,8 +13,10 @@ body {
 .entrance {
     text-align: center;
     background-color: #393A41;;
-    max-height: 810px;
-    width: 480px;
+    min-height: 50vh;
+    max-height: 90vh;
+    min-width: 480px;
+    max-width: 90vh;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
